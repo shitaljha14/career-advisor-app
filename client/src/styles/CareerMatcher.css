@@ -1,0 +1,82 @@
+.career-page {
+    min-height: 100vh;
+    background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.career-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(4px);
+    z-index: 0;
+}
+
+.career-container {
+    position: relative;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 85%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.career-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.career-description {
+    margin-bottom: 1.5rem;
+}
+
+.career-form input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.career-form button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.career-form button:hover {
+    background-color: #1d4ed8;
+}
+
+.matches-container {
+    margin-top: 1.5rem;
+}
+
+.career-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    color: #111;
+}
+
+.error-message {
+    color: #f87171;
+    /* red */
+    margin-top: 0.5rem;
+}

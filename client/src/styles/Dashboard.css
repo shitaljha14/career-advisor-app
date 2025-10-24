@@ -1,0 +1,188 @@
+.dashboard-page {
+  min-height: 100vh;
+  background: url("https://images.unsplash.com/photo-1556761175-4b46a572b786") no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.dashboard-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 0;
+}
+
+.dashboard-container {
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  width: 85%;
+  max-width: 850px;
+  max-height: 80vh;
+  /* ✅ limit height */
+  overflow-y: auto;
+  /* ✅ scroll inside */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  scrollbar-width: thin;
+  /* for Firefox */
+  scrollbar-color: #a5b4fc #f3f4f6;
+}
+
+/* ✅ Optional: make scrollbar pretty */
+.dashboard-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboard-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6366f1, #06b6d4);
+  border-radius: 4px;
+}
+
+.dashboard-container::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+.dashboard-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-title {
+  font-size: 2.3rem;
+  color: #1e3a8a;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-description {
+  color: #374151;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+/* -------------------- Skills Section -------------------- */
+.user-skills {
+  margin-bottom: 2rem;
+}
+
+.user-skills h3 {
+  color: #1e40af;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.user-skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-skills li {
+  margin: 12px 0;
+  font-weight: 500;
+  color: #111827;
+}
+
+.progress-bar {
+  background: #e5e7eb;
+  height: 10px;
+  border-radius: 12px;
+  width: 70%;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  height: 100%;
+  border-radius: 12px;
+  animation: progressGrow 1.2s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+@keyframes progressGrow {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: var(--progress);
+  }
+}
+
+/* -------------------- Badges Section -------------------- */
+.badges {
+  margin-top: 2.5rem;
+}
+
+.badges h3 {
+  color: #1e40af;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.badge {
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+  color: #0369a1;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(3, 105, 161, 0.2);
+}
+
+/* -------------------- Buttons -------------------- */
+.dashboard-buttons {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.dashboard-btn {
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(6, 182, 212, 0.3);
+}
+
+/* -------------------- Animation -------------------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

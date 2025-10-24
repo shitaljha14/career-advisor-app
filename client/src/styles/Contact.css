@@ -1,0 +1,142 @@
+.contact-page {
+    min-height: 100vh;
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1525182008055-f88b95ff7980') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.contact-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(3px);
+    z-index: 0;
+}
+
+.contact-content {
+    position: relative;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contact-description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+.contact-submit {
+    padding: 0.75rem 1.5rem;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.contact-submit:hover {
+    background-color: #6366f1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.contact-submit:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+        /* Fade-in animation */
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+    
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+    
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #4f46e5;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            z-index: 100;
+            animation: toastFade 0.5s ease;
+        }
+    
+        @keyframes toastFade {
+            from {
+                opacity: 0;
+                transform: translate(-50%, 20px);
+            }
+    
+            to {
+                opacity: 1;
+                transform: translate(-50%, 0);
+            }
+        }
+    
+        
+        .contact-content {
+            max-height: 90vh;
+            overflow-y: auto;
+            padding-right: 1rem;
+          
+        }
+    
+        
+        @media (max-width: 768px) {
+            .contact-title {
+                font-size: 2.5rem;
+            }
+    
+            .contact-description {
+                font-size: 1.1rem;
+            }
+    
+            .contact-content {
+                padding: 2rem 1rem;
+            }
+        }

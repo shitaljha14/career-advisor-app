@@ -1,0 +1,56 @@
+.saved-careers-page {
+    background-color: #f9f9fc;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.saved-careers-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.saved-careers-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.saved-careers-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.saved-career-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.saved-career-card:hover {
+    transform: translateY(-5px);
+}
+
+.remove-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+    background: #e43b3b;
+}
+
+.no-saved {
+    font-style: italic;
+    color: #888;
+    margin-top: 2rem;
+}
