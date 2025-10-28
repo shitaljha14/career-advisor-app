@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import MiniNavbar from "../components/MiniNavbar";
-import { UserContext } from "/Users/shitalkumari/career-recommendation-system/client/src/components/UserContext.jsx"; // 🔹 Add this
+import { UserContext } from "./UserContext.jsx";
 import "../styles/CareerMatcher.css";
 
 const CareerMatcher = () => {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "/Users/shitalkumari/career-recommendation-system/client/src/styles/MiniNavbar.css";
+import "../styles/MiniNavbar.css";
 
 const MiniNavbar = () => {
   const [open, setOpen] = useState(false);
