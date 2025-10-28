@@ -1,5 +1,6 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import { UserProvider } from "/Users/shitalkumari/career-recommendation-system/client/src/components/UserContext.jsx";
+import {BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { UserProvider } from "./components/UserContext.jsx";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
