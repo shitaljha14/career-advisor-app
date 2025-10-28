@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MiniNavbar from "../components/MiniNavbar";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
+
 import "../styles/Contact.css";
 
 const Contact = () => {
